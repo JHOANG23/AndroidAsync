@@ -1,2 +1,3 @@
-include 'AndroidAsync', 'AndroidAsyncSample', 'AndroidAsyncStetho'
+//include 'AndroidAsync', 'AndroidAsyncSample', 'AndroidAsyncStetho'
+include 'AndroidAsync', 'AndroidAsyncStetho'
 

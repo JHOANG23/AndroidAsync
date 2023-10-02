@@ -9,6 +9,23 @@ buildscript {
     }
 }
 
+plugins {
+    id 'java'
+    id 'org.checkerframework' version '0.6.29'
+}
+apply plugin: 'org.checkerframework'
+
+dependencies {
+    checkerFramework 'org.checkerframework:checker:3.39.0'
+    implementation 'org.checkerframework:checker-qual:3.39.0'
+}
+
+checkerFramework {
+    checkers = [
+            'org.checkerframework.checker.resourceleak.ResourceLeakChecker'
+    ]
+}
+
 subprojects {
     repositories {
         jcenter()
